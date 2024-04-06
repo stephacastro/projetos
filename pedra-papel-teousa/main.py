@@ -3,7 +3,7 @@ from utils.choices import emoji_papel, emoji_pedra, emoji_tesoura, emoji_bolinha
 from utils.choices import emoji_primeiro_lugar, emoji_triste, emoji_maos_apertando
 import random
 
-print(f'\n==================== BEM VINDOS AO {emoji_pedra}  {emoji_papel}   {emoji_tesoura} ====================\n')
+print(f'\n========================== BEM VINDOS AO {emoji_pedra}  {emoji_papel}   {emoji_tesoura} ==========================\n')
 
 def pedra_papel_tesoura(escolha_usuario, escolha_maquina):
     if escolha_maquina == escolha_usuario:
