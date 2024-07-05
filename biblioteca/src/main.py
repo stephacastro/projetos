@@ -1,9 +1,8 @@
 # atributos do livro
 class Livros:
-    def __init__(self, titulo:str, autor:str, isbn_id:int, genero:str):
+    def __init__(self, titulo:str, autor:str, genero:str):
         self.titulo = titulo 
         self.autor = autor
-        self.isbn_id = isbn_id
         self.genero = genero
         self.disponivel = True
 
@@ -15,28 +14,31 @@ class Livros:
 class Biblioteca:
     def __init__(self):
         self.biblioteca = []
+           
+    def cadastrar_livro(self):
+        titulo = input('Titulo: ')
+        autor = input('Autor: ')
+        genero = input('genero: ')
 
-    def cadastrar_livro(self, titulo, autor, isbn_id, genero):
-        titulo = Livros(input('Titulo: '))
-        autor = Livros(input('Autor: '))
-        isbn_id = Livros(input('isbn_id: '))
-        genero = Livros(input('genero: '))
+        lista = [] 
 
-        if titulo and autor and isbn_id and genero in self.biblioteca:
-            self.biblioteca[titulo].append(titulo)
+        titulos = [item['titulo'].lower() for item in lista]
+
+        if titulo.lower() not in titulos:
+            dicionario = dict(titulo=titulo, autor=autor)
+            lista.append(dicionario)
+            print(f'{titulo} adicionado com sucesso!')
         else:
-            print('Livro já cadastrado')
+            print('Livro já cadastrado na base de dados')
+            print(lista)
 
     def listar_livros(self):
-        raise NotImplemented('Função precisa ser construida')
+        return "Livros Cadastrados\n".join(livro for livro in lista)
 
     def remover_livro(self):
         raise NotImplemented('Função precisa ser construida')
 
     def atualizar_livro(self):
-        raise NotImplemented('Função precisa ser construida')
-
-    def listar_usuarios(self):
         raise NotImplemented('Função precisa ser construida')
 
 class Usuario:
@@ -49,6 +51,9 @@ class Usuario:
         raise NotImplemented('Função precisa ser construida')
 
     def distincao(self):
+        raise NotImplemented('Função precisa ser construida')
+    
+    def listar_usuarios(self):
         raise NotImplemented('Função precisa ser construida')
 
 
