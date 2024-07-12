@@ -1,23 +1,37 @@
-print('######################################')
-titulo = input('Titulo: ')
-autor = input('Autor: ')
-print('######################################\n')
 
-lista = [{'titulo':'teste', 'autor':'teste'}] 
+from datetime import datetime as dt
+
+teste = dt.now()
+
+print(teste)
 
 
-titulos = [item['titulo'].lower() for item in lista]
+'''
+def cadastrar_livro(self):
+        titulo = input('Titulo: ')
+        autor = input('Autor: ')
+        genero = input('genero: ')
 
-if titulo.lower() not in titulos:
-    dicionario = dict(titulo=titulo, autor=autor)
-    lista.append(dicionario)
-    print(f'{titulo} adicionado com sucesso!')
+        titulos = [livro.titulo.lower() for livro in self.biblioteca]
+
+        if titulo.lower() not in titulos:
+            novo_livro = dict(titulo, autor, genero)
+            self.biblioteca.append(novo_livro)
+            print(f'{titulo} adicionado com sucesso!')
+        else:
+            print('Livro já cadastrado na base de dados')
+
+import uuid
+
+id_usuario = uuid.uuid1()
+usuario = input('Usuário: ')
+tipo = input('Tipo: ')
+
+lista_usuario = [usuario.usuario.lower() for usuario in self.usuario] # type:ignore
+
+if lista_usuario.lower() not in usuario:
+    novo_usuario = dict(id_usuario, usuario, tipo)
+    self.usuario.append(novo_usuario)
+    print(f'Usuário "{novo_usuario}" cadastrado com sucesso.')
 else:
-    print('Livro já cadastrado na base de dados')
-
-print('Remover Livro')
-
-if titulo.lower() in titulos:
-    print('')
-
-
+    print(f'{usuario} já cadastrado.')'''
