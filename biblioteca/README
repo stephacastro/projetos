@@ -1,0 +1,21 @@
+## Projeto Biblioteca 
+
+## O objetivo desse sistema é gerenciar uma biblioteca
+
+# Esse sistema bibliotecário é um gerenciador de livros e usuarios 
+
+# Menu de opções 
+
+========== MENU ==========
+1. Cadastrar usuário
+2. Listar usuários
+3. Cadastrar livro
+4. Listar livros
+5. Realizar empréstimo
+6. Devolver livro
+7. Remover livro
+8. Atualizar livro
+9. Calcular multa
+0. Sair
+=======================
+Escolha uma opção: 
