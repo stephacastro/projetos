@@ -1,7 +1,7 @@
 services:
-  stars-api:
+  app-biblioteca:
     build: .
-    container_name: biblioteca
+    container_name: app-biblioteca
     environment:
       PORT: 8000
       DEBUG: 1

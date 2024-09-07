@@ -1,5 +1,5 @@
-from sqlalchemy import Boolean, Column, ForeignKey, Integer, String, Text
-from sqlalchemy.orm import relationship
+from sqlalchemy import Boolean, Column, ForeignKey, Integer, String #type:ignore
+from sqlalchemy.orm import relationship #type:ignore
 
 from app.database import Base
 
@@ -10,6 +10,8 @@ class Usuario(Base):
     email = Column(String(150), unique=True, index=True)
     usuario = Column(String(150), unique=True, index=True)
     senha = Column(String(150))
+    ativo = Column(Boolean, default=True)
+
 class Livro(Base):
     __tablename__ = "livros"
 
