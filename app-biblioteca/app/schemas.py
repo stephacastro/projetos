@@ -21,3 +21,6 @@ class Cadastrar_livro(BaseLivro):
 class Livro(BaseLivro):
     id: int
     disponivel: bool
+
+class Deletar_livro(BaseModel):
+    titulo: str
