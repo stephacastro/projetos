@@ -15,7 +15,7 @@
 ## Instalação das bibliotecas para testar o aplicativo local
     pip install -r requirements.txt
 
-## Instalou bibliotecas nova no projeto?? Não esqueça de atualizar o requiretems
+## Instalou bibliotecas nova no projeto?? Não esqueça de atualizar o requirements
     pip freeze > requirements.txt
 
 ## O projeto esta todo encapsulado em Docker, para construir a imagem e o container do aplicativo e do banco...
